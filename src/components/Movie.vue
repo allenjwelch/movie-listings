@@ -9,14 +9,14 @@
 
 
 <script>
-import MoviesList from './MoviesList.vue';
+// import MoviesList from './MoviesList.vue';
 
 const POSTER_PATH = "http://image.tmdb.org/t/p/w154";
 
 export default {
     name: "Movie",
     components: {
-        MoviesList,
+        // MoviesList,
     },
     props: ['movie'],
     computed: {

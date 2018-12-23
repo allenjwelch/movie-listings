@@ -1,6 +1,13 @@
 <template>
     <section class="header">
-        <h1 class="header-title">{{ title }}</h1>
+        <router-link to="/">
+            <img class="header-title" src="../assets/MovieVue.png" alt="">
+        </router-link>
+
+        <!-- <transition name="fade">
+            <h1 v-if="show">Animated</h1>
+        </transition>
+            <button @click="show = !show">Show/Hide</button> -->
 
         <nav class="navbar">
             <ul>
@@ -38,6 +45,7 @@ export default {
     data() {
         return {
             name: 'Allen',
+            show: false,
         }
     },
     methods: {
@@ -57,14 +65,35 @@ export default {
     width: 100%;
     background: #333;
     position: relative;
+    z-index: 1;
 
     .header-title {
+        height: 40px;
         margin: 0;
         position: absolute;
         left: 20px;
-        top: 10px;
+        top: 6px;
         color: #fff;
     }
+
+    h1 {
+        margin: 0;
+        color: #fff;
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: all 0.3s ease;
+    }
+
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    // name-enter -> name-enter-to
+    // name-enter-active
+    // name-leave -> name-leave-to
+    // name-leave-active
 
     .navbar {
         float: right;
@@ -142,6 +171,7 @@ export default {
                 background: #333;
                 // transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
                 animation: drop .5s;
+                z-index: 10;
 
                 li {
                     display: block;

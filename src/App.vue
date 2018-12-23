@@ -2,7 +2,9 @@
   <div id="app">
     <Header :title="title"/>
     <div class="main">
-        <router-view></router-view>
+        <!-- <transition name="fade"> -->
+            <router-view></router-view>
+        <!-- </transition> -->
     </div>
     <Footer />
   </div>
@@ -20,9 +22,10 @@ export default {
   },
   data() {
       return {
-          title: "Vue App",
+          title: "Movie Vue",
       }
-  }
+  },
+
 }
 </script>
 
@@ -38,7 +41,7 @@ body {
   color: #2c3e50;
 
   .main {
-    padding: 20px;
+    // padding: 20px;
     min-height: calc(100vh - 50px - 30px - 40px);
 
   }
@@ -46,5 +49,14 @@ body {
     // display: block;
     // margin: 0 20%;
   }
+
+  .fade-enter-active, .fade-leave-active {
+        transition: all 0.3s ease;
+    }
+
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
 }
 </style>

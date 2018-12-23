@@ -18,7 +18,8 @@ export default {
     height: 30px;
     width: 100%;
     background: #333;
-        padding: 8px 0;
+    padding: 8px 0;
+    box-sizing: border-box;
 
     p {
         margin: 0 20px;
