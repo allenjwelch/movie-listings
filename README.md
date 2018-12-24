@@ -1,5 +1,17 @@
 # Basic-Vue-App
 
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+npm run build for building webpack
+
+node server.js
+
+```
+
 ## Project setup
 ```
 npm install

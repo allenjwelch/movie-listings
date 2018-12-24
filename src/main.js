@@ -10,10 +10,6 @@ Vue.use(VueRouter)
 
 // 1. Define route components.
 // These can be imported from other files
-// import Home from './views/Home.vue';
-// import TodoList from './views/TodoList.vue';
-// import Examples from './views/Examples.vue';
-// import Movies from './views/Movies.vue';
 import './assets/styles.scss';
 
 // const HomePage = { template: '<div>Home</div>' }
@@ -25,27 +21,14 @@ import './assets/styles.scss';
 // `Vue.extend()`, or just a component options object.
 // We'll talk about nested routes later.
 
-// const routes = [
-//   { path: '/home', component: Home },
-//   { path: '/todolist', component: TodoList },
-//   { path: '/examples', component: Examples },
-//   { path: '/movies', component: Movies },
-// ]
 
 // 3. Create the router instance and pass the `routes` option
 // You can pass in additional options here, but let's
 // keep it simple for now.
 
-// const router = new VueRouter({
-//   routes // short for `routes: routes`
-// })
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
-// new Vue({
-//   render: h => h(App),
-//   router
-// }).$mount('#app')
 
 new Vue({
     render: h => h(App),
