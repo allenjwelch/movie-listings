@@ -28,23 +28,23 @@ export default {
         }
     },
     beforeCreate() {
-      console.log('before create');
+    //   console.log('before create');
     },
     created() {
-        console.log('create');
+        // console.log('create');
         this.fetchData();
     },
     beforeMount() {
-        console.log('before mount');
+        // console.log('before mount');
     },
     mounted() {
-        console.log('mounted');
+        // console.log('mounted');
     },
     beforeUpdate() {
-        console.log('before update');
+        // console.log('before update');
     },
     updated() {
-        console.log('updated');
+        // console.log('updated');
     },
     methods: {
         fetchData: async function() {

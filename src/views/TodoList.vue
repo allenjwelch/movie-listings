@@ -21,7 +21,7 @@
 
 let todoList = [];
 let todoListLocal = JSON.parse(localStorage.getItem('todolist'));
-todoList.push(...todoListLocal);
+todoList.push(todoListLocal);
 
 export default {
     name: 'todoList',

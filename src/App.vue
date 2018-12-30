@@ -45,10 +45,6 @@ body {
     min-height: calc(100vh - 50px - 30px - 40px);
 
   }
-  img {
-    // display: block;
-    // margin: 0 20%;
-  }
 
   .fade-enter-active, .fade-leave-active {
         transition: all 0.3s ease;

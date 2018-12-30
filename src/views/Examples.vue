@@ -67,9 +67,9 @@ export default {
     },
     computed: {
         newTitle: function() {
-            if(!this.isTrue) {
-                this.title = "New Title"
-            }
+            // if(!this.isTrue) {
+            //     this.title = "New Title"
+            // }
             return this.title;
             // console.log(this.title);
             // console.log(this.isTrue);

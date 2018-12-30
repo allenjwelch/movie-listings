@@ -39,7 +39,7 @@ export default {
                 const res = await fetch(`https://api.themoviedb.org/3/movie/${this.$route.params.id}?api_key=253f8b80b150f44540f78217551365ee`);
                 const movie  = await res.json();
                 this.movie = movie;
-                console.log(movie);
+                // console.log(movie);
             } catch(e) {
                 console.log(e);
             }
